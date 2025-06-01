@@ -1,7 +1,17 @@
 {
-  "extends": "standard",
   "env": {
     "node": true,
-    "jest": true
+    "jest": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "prefer-const": "error"
   }
 }
